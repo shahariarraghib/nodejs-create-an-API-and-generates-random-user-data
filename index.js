@@ -11,9 +11,6 @@ const { getAllDataRandom } = require('./Controllers/GetDataRandom');
 app.use(cors());
 app.use(express.json());
 
-// file System
-
-// const fs = requir('fs')
 
 app.use("/api/v1/user", CrudOperationsRoute );
 app.use("/api/v1/user/random", getAllDataRandom );
